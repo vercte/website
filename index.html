@@ -1,27 +1,67 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="/font/font.css">
-        <link rel="stylesheet" href="/res/style.css">
-        <script src="scr/home.js"></script>
+      <link rel="stylesheet" href="/font/font.css">
+      <link rel="stylesheet" href="/res/style.css">
+      <link rel="icon" href="/img/logo.svg">
+      <script src="scr/home.js" defer></script>
+
+      <!-- embed stuff -->
+      <meta content="Vercte" property="og:title" />
+      <meta content="hello this is my website 😊 (i program things)" property="og:description" />
+      <meta content="https://vercte.net" property="og:url" />
+      <meta content="https://vercte.net/img/logo.svg" property="og:image" />
+      <meta content="#008cff" data-react-helmet="true" name="theme-color" />
+      
+      <title>Vercte</title>
     </head>
-    <body class="dark">
-        <div id="header-area">
-            <div id="header-top">
-                <div id="header">Vercte</div>
-                <div style="width: 100%;"></div>
-                <div id="sub-header">Hello World!</div>
-            </div>
-            <div id="wave-header"></div>
-            <div id="scroll-hint">
-                scroll<br>
-                <div id="scroll-hint-arrow"></div>
-            </div>
+    <body>
+      <div id="logo-area">
+        <div id="logo"></div>
+      </div>
+      <div id="barrier-container">
+        <div id="barrier-wave"></div>
+      </div>
+      <div id="main-area">
+        <div id="page-landing" class="section">
+          <div id="website-title">
+            Vercte
+          </div>
+          <div class="break"></div>
+          <div class="bio-emp">
+            Hello there!
+          </div>
+          <div class="break"></div>
+          <div id="button-list" style="margin-top: 10pt;">
+            <button class="main-button" go-to="bio">
+              <img src="/img/bio.png" width="100%">
+            </button>
+            <button class="main-button" go-to="links">
+              <img src="/img/links.png" width="100%">
+            </button>
+            <button class="main-button" go-to="github">
+              <img src="/img/github.png" width="100%">
+            </button>
+          </div>
         </div>
-        <div id="main-content">
-            <div class="heading1 with-sub">Hello!</div>
-            <div class="heading1sub">I'm Vercte.</div>
-            I'm a developer who loves to program!
+        <div id="page-bio" class="section closed">
+          <div style="width: 80%;">
+            I'm a teenager who loves to program, and I create a lot 
+            of projects for fun (since I'm a nerd), and then I open 
+            source it to other people.<br><br>
+            And for some reason, I created this website myself, using a text editor. Huh.
+          </div>
         </div>
+        <div id="page-links" class="section closed">
+          <button link-to="https://scratch.mit.edu/users/lolecksdeehaha" style="margin-bottom: 10pt;"><img src="/img/scratchlogo.png" height="16px"> My Scratch Account</button>
+          <button link-to="https://github.com/lopste" style="margin-bottom: 10pt;"><img src="/img/github.png" height="16px"> My GitHub Account</button><div class="break"></div>
+          more links soon this is just to say the website's finished lol
+        </div>
+      </div>
+      <div id="other-buttons">
+        <button class="main-button closed" id="home-button">
+          <img src="/img/home.png" width="100%">
+        </button>
+      </div>
     </body>
 </html> 
